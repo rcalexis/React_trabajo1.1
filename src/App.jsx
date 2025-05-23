@@ -16,6 +16,7 @@ const nuevoDato =
     // aqui no se utiliza un div dentro de esas etiquetas por que nos podemos confundir 
     <> 
   <Header 
+  
   cart = {cart}
   setCart ={setCart()}
   
@@ -29,6 +30,8 @@ const nuevoDato =
             <Guitarras
             key = {guitar.id} 
             guitar = {guitar}
+            cart={cart}
+            setCart={setCart}
 
             />
         )}

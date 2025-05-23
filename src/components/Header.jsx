@@ -37,9 +37,8 @@ function Header({cart,setCart}){
                                     </tr>
                                 </thead>
                                 <tbody>
-
                                       {cart.map ( (guitar)=>(
-
+                                        
                                        <tr>
                                         <td>
                                             <img className="img-fluid" src="./public/img/guitarra_02.jpg" alt="imagen guitarra" />
@@ -72,8 +71,10 @@ function Header({cart,setCart}){
                                             </button>
                                         </td>
                                     </tr>
-                                   
+
                                       ))}
+
+
                                 </tbody>
                             </table>
 
