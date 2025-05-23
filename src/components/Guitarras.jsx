@@ -1,4 +1,4 @@
-function Guitarras({guitar,cart,setCard}) {
+function Guitarras({guitar,setCard}) {
     const {name,image,description,price} = guitar;
 
     return (
@@ -15,7 +15,7 @@ function Guitarras({guitar,cart,setCard}) {
                     <button 
                         type="button"
                         className="btn btn-dark w-100"
-                        onClick={()=> setCard([...cart,guitar])}
+                        onClick={()=> setCard(data =>[...data,guitar])}
 
                     >Agregar al Carrito</button>
                 </div>
