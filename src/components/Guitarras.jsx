@@ -1,4 +1,4 @@
-function Guitarras({guitar,setCard}) {
+function Guitarras({guitar,setCart,cart}) {
     const {name,image,description,price} = guitar;
 
     return (
@@ -15,7 +15,7 @@ function Guitarras({guitar,setCard}) {
                     <button 
                         type="button"
                         className="btn btn-dark w-100"
-                        onClick={()=> setCard(data =>[...data,guitar])}
+                        onClick={()=> setCart([...cart,guitar])}
 
                     >Agregar al Carrito</button>
                 </div>
@@ -26,5 +26,7 @@ function Guitarras({guitar,setCard}) {
 }
 
 export default Guitarras
+
+
 
 //que el agregar al carrito funcione 

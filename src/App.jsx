@@ -6,11 +6,12 @@ import { useState } from "react";
 
 function App() {
 
-console.log(db);
-const [data,setData] = useState(db);
-const [cart,setCart]= useState([nuevoDato])
-const nuevoDato = 
-{id: 1, name: 'Lukather', image: 'guitarra_01', description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.', price: 299}
+  // const nuevoDato = {id: 1, name: 'Lukather', image: 'guitarra_01', description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.', price: 299};
+
+
+// console.log(db);
+const [data] = useState(db);
+const [cart,setCart]= useState([])
 
   return (
     // aqui no se utiliza un div dentro de esas etiquetas por que nos podemos confundir 
@@ -18,7 +19,7 @@ const nuevoDato =
   <Header 
   
   cart = {cart}
-  setCart ={setCart()}
+  // setCart ={setCart}
   
   />
 
@@ -30,7 +31,7 @@ const nuevoDato =
             <Guitarras
             key = {guitar.id} 
             guitar = {guitar}
-            cart={cart}
+            cart={cart} 
             setCart={setCart}
 
             />
